@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <main className="flex flex-col justify-between h-screen bg-gradient-to-b from-cyan-500 to-blue-400">
+      <main className="flex flex-col justify-between h-full bg-gradient-to-b from-cyan-500 to-blue-400">
         <section className="w-full max-w-lg mx-auto p-6 text-white">
           <div className="flex justify-between">
             <div>
@@ -17,13 +17,12 @@ function App() {
           </div>
           <div className="p-8 flex flex-col items-center">
             <div className="text-center">
-              <h1 className="mb-3 text-2xl font-semibold">Yogyakarta</h1>
-              <div>
-                <img className="absolute" src="https://pngimg.com/uploads/cloud/cloud_PNG0.png" width={400} alt="" />
-                <img className="mt-6" src="https://pngimg.com/uploads/rain/rain_PNG13456.png" width={400} alt="" />
+              <h1 className="mb-3 text-2xl font-semibold">Yogyakarta, ID</h1>
+              <div className="flex justify-center">
+                <img src="/assets/images/cloud2400.png" width={400} alt="" />
               </div>
             </div>
-            <div className="w-full -mt-10 flex justify-around text-xl">
+            <div className="w-full flex justify-around -mt-10 text-xl">
               <div className="flex gap-2 mt-4 opacity-80">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M116,32V16a12,12,0,0,1,24,0V32a12,12,0,0,1-24,0Zm80,96a68,68,0,1,1-68-68A68.07,68.07,0,0,1,196,128Zm-24,0a44,44,0,1,0-44,44A44.05,44.05,0,0,0,172,128ZM51.51,68.49a12,12,0,1,0,17-17l-12-12a12,12,0,0,0-17,17Zm0,119-12,12a12,12,0,0,0,17,17l12-12a12,12,0,1,0-17-17ZM196,72a12,12,0,0,0,8.49-3.51l12-12a12,12,0,0,0-17-17l-12,12A12,12,0,0,0,196,72Zm8.49,115.51a12,12,0,0,0-17,17l12,12a12,12,0,0,0,17-17ZM44,128a12,12,0,0,0-12-12H16a12,12,0,0,0,0,24H32A12,12,0,0,0,44,128Zm84,84a12,12,0,0,0-12,12v16a12,12,0,0,0,24,0V224A12,12,0,0,0,128,212Zm112-96H224a12,12,0,0,0,0,24h16a12,12,0,0,0,0-24Z"></path></svg>
                 <span className="text-2xl">24°</span>
@@ -47,7 +46,10 @@ function App() {
           </div>
           <div className="flex justify-between">
             <div className="flex flex-col gap-1 mt-6 py-4 px-6 items-center rounded-xl bg-gradient-to-b from-cyan-500 to-blue-400 shadow-lg">
-              <img src="https://img.icons8.com/?size=50&id=g9gfDk0bIzCw&format=png" alt="" />
+              <div className="h-12 flex justify-center">
+                <img className="absolute" src="https://pngimg.com/uploads/cloud/cloud_PNG0.png" width={75} alt="" />
+                <img className="mt-6" src="https://pngimg.com/uploads/rain/rain_PNG13456.png" width={50} alt="" />
+              </div>
               <div className="mt-2 text-center text-white">
                 <p className="text-xl font-bold">12°C</p>
                 <p className="text-sm text-gray-100">Now</p>
